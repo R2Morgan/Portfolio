@@ -9,13 +9,12 @@
     color:white;
 }
 
-.background{
-    background-color: rgb(5, 5, 5);
-    height: 861px;
-}
-
 .name{
     color:white;
     font-weight: 500;
     margin-left:10px;
+}
+
+.navbar-inner .navbar{
+    background: transparent;
 }
