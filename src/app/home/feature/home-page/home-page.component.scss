@@ -1,0 +1,18 @@
+@import "../../../../styles/variables";
+
+.col{
+    color:white;
+    margin-left:0px;
+}
+
+.row{
+    --bs-gutter-x:0;
+}
+
+.main-content section{
+    scroll-snap-align: start;
+}
+
+.scrollspy-example {
+    position: relative;
+}
