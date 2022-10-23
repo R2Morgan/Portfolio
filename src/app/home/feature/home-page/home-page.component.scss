@@ -1,11 +1,8 @@
 @import "../../../../styles/variables";
 
-.col{
+.home-page{
     color:white;
     margin-left:0px;
-}
-
-.row{
     --bs-gutter-x:0;
 }
 
@@ -15,4 +12,14 @@
 
 .scrollspy-example {
     position: relative;
+    height:850px;
+    overflow-y: scroll;
+    scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+}
+
+.home-page-section{
+    margin-left: 9%;
+    margin-bottom: -100px;
+    height:945px;
 }

@@ -8,9 +8,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onSectionChange(sectionId: string) {
+    console.log(sectionId);
+    this.router.navigate(['/'], {fragment: sectionId});
   }
 
 }

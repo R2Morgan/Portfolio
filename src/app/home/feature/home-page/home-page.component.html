@@ -1,48 +1,22 @@
-<div class="row align-items-start">
-    <div class="col col-1">
-        <homepage-scrollspy></homepage-scrollspy>
-    </div>
-    <div class="col col-right">
-        <div data-bs-spy="scroll" data-bs-target="#scrollspy-spy" data-bs-offset="0" tabindex="0" class="scrollspy-example main-content">
-            <section id="start-section">
-                <h4>Item 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida luctus ultrices.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                    Quisque sed tempor quam, a luctus mi. Donec pretium libero dui, eget porttitor diam maximus in.
-                    Pellentesque tempor at elit nec gravida. Curabitur malesuada posuere sem, ut egestas erat maximus at.
-                    Cras commodo arcu sit amet sapien ultrices blandit. Donec suscipit lorem vel suscipit aliquet. Sed id consequat eros.
-                    Nullam fermentum efficitur dignissim. Aliquam pretium ac purus at porta. Sed vel leo sed sem maximus finibus ut ac risus.
-                    Morbi lorem enim, dignissim et fringilla sit amet, varius sed quam. Vivamus ut molestie turpis.
-                    Aenean ultricies diam sed nisi consequat, mattis finibus erat maximus.</p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            </section>
-            <section id="recents-section">
-                <h4>Item 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida luctus ultrices.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                    Quisque sed tempor quam, a luctus mi. Donec pretium libero dui, eget porttitor diam maximus in.
-                    Pellentesque tempor at elit nec gravida. Curabitur malesuada posuere sem, ut egestas erat maximus at.
-                    Cras commodo arcu sit amet sapien ultrices blandit. Donec suscipit lorem vel suscipit aliquet. Sed id consequat eros.
-                    Nullam fermentum efficitur dignissim. Aliquam pretium ac purus at porta. Sed vel leo sed sem maximus finibus ut ac risus.
-                    Morbi lorem enim, dignissim et fringilla sit amet, varius sed quam. Vivamus ut molestie turpis.
-                    Aenean ultricies diam sed nisi consequat, mattis finibus erat maximus.</p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            </section>
-            <section id="services-section">
-                <h4>Item 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida luctus ultrices.
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                    Quisque sed tempor quam, a luctus mi. Donec pretium libero dui, eget porttitor diam maximus in.
-                    Pellentesque tempor at elit nec gravida. Curabitur malesuada posuere sem, ut egestas erat maximus at.
-                    Cras commodo arcu sit amet sapien ultrices blandit. Donec suscipit lorem vel suscipit aliquet. Sed id consequat eros.
-                    Nullam fermentum efficitur dignissim. Aliquam pretium ac purus at porta. Sed vel leo sed sem maximus finibus ut ac risus.
-                    Morbi lorem enim, dignissim et fringilla sit amet, varius sed quam. Vivamus ut molestie turpis.
-                    Aenean ultricies diam sed nisi consequat, mattis finibus erat maximus.</p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            </section>
-          </div>
-    </div>
+<div class="home-page">
+<div scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)" class="scrollspy-example main-content">
+    <section id="start-section" class="home-page-section">
+        <h4>Welcome</h4>
+        <p>Work In Progress</p>
+    </section>
+    <section id="recents-section" class="home-page-section">
+        <h4>Recent Projects</h4>
+        <p>Work In Progress</p>
+    </section>
+    <section id="services-section" class="home-page-section">
+        <h4>Offered Services</h4>
+        <p>Work In Progress</p>
+    </section>
+    <section>
+        <home-page-footer></home-page-footer>
+    </section>
+  </div>
+  <div>
+    <homepage-scrollspy></homepage-scrollspy>
+</div>
 </div>

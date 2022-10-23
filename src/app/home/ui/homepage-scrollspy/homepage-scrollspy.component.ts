@@ -20,8 +20,6 @@ export class HomepageScrollspyComponent implements OnInit {
       if(fragment != null)
         this.section = fragment;
     })
-    console.log(this.section);
-    
     return this.section;
   }
 
