@@ -1,19 +1,63 @@
 <div class="home-page">
 <div scrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)" class="scrollspy-example main-content">
     <section id="start-section" class="home-page-section">
-        <h4>Welcome</h4>
-        <p>Work In Progress</p>
+        <img src="../../../../assets/Stefan0.png" alt="Picture of me" class="picture">
+        <div class="about-me">
+            <p class="medium-text">HELLO THERE,</p>
+            <p class="hidden-reference">GENERAL KENOBI!</p>
+            <p class="large-text">I'M STEFAN</p>
+            <div class="wrapper">
+                <div class="static-text">I AM A</div>
+                <ul class="dynamic-text">
+                    <li><span>DEVELOPER</span></li>
+                    <li><span>WRITER</span></li>
+                    <li><span>3D ARTIST</span></li>
+                    <li><span>STUDENT</span></li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="recents-section" class="home-page-section">
-        <h4>Recent Projects</h4>
-        <p>Work In Progress</p>
+        <p style="visibility:hidden;">Recents-section</p>
+        <div class="centered-container">
+            <recent-card [cardText]="'DEVELOPMENT'"></recent-card>
+            <recent-card [cardText]="'3D MODELING'"></recent-card>
+            <recent-card [cardText]="'WRITING'"></recent-card>
+            <p class="large-text m-30">RECENT WORK</p>
+            <a routerLink="/portfolio" class="btn btn-secondary btn-lg m-30">VIEW ALL</a>
+        </div>
     </section>
     <section id="services-section" class="home-page-section">
-        <h4>Offered Services</h4>
-        <p>Work In Progress</p>
+        <p style="visibility:hidden;">Services-section</p>
+        <div class="centered-container">
+            <div class="service-card">
+                <div class="service-card-container-top">
+                    <i class="fa-solid fa-code fa-2xl"></i>
+                    <h1 class="service-card-title">WEBSITE DEVELOPMENT</h1>
+                    <hr class="service-card-hr">
+                    <p class="service-card-text">Do you need a website built for yourself or your company? You have come to the right place!</p>
+                </div>
+                <div class="service-card-container">
+                    <p class="service-card-tags">Angular · HTML 5 · SCSS</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-container-top">
+                    <i class="fa-solid fa-cube fa-2xl"></i>
+                    <h1 class="service-card-title">3D MODELING</h1>
+                    <hr class="service-card-hr">
+                    <p class="service-card-text">3D Art is one of my biggest passions. If you have a request for a model or anything similar, feel free to contact me.</p>
+                </div>
+                <div class="service-card-container">
+                    <p class="service-card-tags">Blender</p>
+                </div>
+            </div>
+            <p class="large-text m-30">SERVICES</p>
+            <a routerLink="/contact" class="btn btn-secondary btn-lg m-30">CONTACT ME</a>
+        </div>
     </section>
     <section>
-        <home-page-footer></home-page-footer>
+        <footer></footer>
     </section>
   </div>
   <div>
