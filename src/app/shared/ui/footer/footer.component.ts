@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangelogService } from '../../data-access/changelog.service';
 
 @Component({
   selector: 'footer',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  latestVersion:string = '';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private changelogService: ChangelogService) { 
   }
-
+  
+  async ngOnInit(): Promise<void> {
+    console.log(this.latestVersion);
+    
+    this.changelogService.getLatestVersion().then((data) => this.latestVersion = data);
+  }
 }

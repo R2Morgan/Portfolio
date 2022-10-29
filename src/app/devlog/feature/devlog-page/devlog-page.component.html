@@ -1,19 +1,17 @@
-<h1 class="title">Changelog - Alpha Version</h1>
-<div class="devlog-container">
-    <h2>v0.02</h2>
-    <h3>26.10.2022</h3>
-    <p>+ Homepage Finished</p>
-    <p>-> Picture of me that changes colors when hovered over added</p>
-    <p>-> Introductory text with typing effect added</p>
-    <p>-> Recent work section finished (Still need to add clickable recent work)</p>
-    <p>-> Services section finished</p>
-    <p>+ Development version of Changelog page (Text only) added</p>
-    <p>+ Base Routing implemented</p>
-    <p>- Minor Improvement to the Scrollspy (Active tab is now blue)</p>
-    <p>/ Still not mobile friendly</p>
-    <h2>v0.01</h2>
-    <h3>23.10.2022</h3>
-    <p>+ First (Alpha) Version of the Website Released</p>
-    <p>+ Minimum Functionality</p>
-    <p>+ Header and Footer finished (No Functionality/Routing yet)</p>
+<div class="changelog-container">
+    <div class="sticky-top title-div">
+        <h1 class="title">Changelog</h1>
+    </div>
+        <ul>
+            <li *ngFor="let version of changelogList">
+                <details open class="devlog-container">
+                <summary>{{ version.number }}</summary>
+                    <h3>{{ version.date }}</h3>
+                    <p *ngFor="let change of version.changes">{{ change }}</p>
+                </details>
+            </li>
+        </ul>
+</div>
+<div class="footer-container">
+    <footer></footer>
 </div>

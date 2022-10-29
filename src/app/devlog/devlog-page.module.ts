@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { SharedModule } from '../shared/shared.module';
+import { DevlogPageComponent } from './feature/devlog-page/devlog-page.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [DevlogPageComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class DevlogPageModule { }

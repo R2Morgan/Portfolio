@@ -35,3 +35,29 @@ body::-webkit-scrollbar{
 img, svg {
     vertical-align: baseline;
 }
+
+.medium-text{
+    position: inherit;
+    font-size: 50px;
+    letter-spacing: 6px;
+    margin-left:14%;
+}
+
+.large-text{
+    position: inherit;
+    font-size:75px;
+    letter-spacing: 10px;
+    font-weight:bold;
+}
+
+.cw{
+	color:white;
+}
+
+.pm{
+	text-align: center;
+}
+
+.m-30{
+    margin-top:30px;
+}

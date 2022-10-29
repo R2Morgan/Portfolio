@@ -40,20 +40,6 @@
     width:1000px;
 }
 
-.medium-text{
-    position: inherit;
-    font-size: 50px;
-    letter-spacing: 6px;
-    margin-left:14%;
-}
-
-.large-text{
-    position: inherit;
-    font-size:75px;
-    letter-spacing: 10px;
-    font-weight:bold;
-}
-
 .wrapper{
     display: inline-flex;
     margin-left: 14%;
@@ -126,10 +112,6 @@
     visibility:hidden;
     height: 0px;
     margin: 0px;
-}
-
-.m-30{
-    margin-top:30px;
 }
 
 .btn-secondary{
@@ -217,4 +199,8 @@
     margin-right: auto;
     color: $green-blue-crayola;
     border: solid 1px $green-blue-crayola;
+}
+
+.services-section{
+    height:950px;
 }

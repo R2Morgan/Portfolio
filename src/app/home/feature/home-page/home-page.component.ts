@@ -14,7 +14,6 @@ export class HomePageComponent implements OnInit {
   }
 
   onSectionChange(sectionId: string) {
-    console.log(sectionId);
     this.router.navigate(['/'], {fragment: sectionId});
   }
 
