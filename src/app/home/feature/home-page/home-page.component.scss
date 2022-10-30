@@ -12,7 +12,7 @@
 
 .scrollspy-example {
     position: relative;
-    height:850px;
+    height:849px;
     overflow-y: scroll;
     scroll-snap-points-y: repeat(100vh);
 	scroll-snap-type: y mandatory;
@@ -203,4 +203,22 @@
 
 .services-section{
     height:950px;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: $davys-grey;
 }

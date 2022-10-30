@@ -2,6 +2,7 @@
 
 @import "styles/_variables.scss";
 
+
 body{
     background-image: url("/assets/Background.png");
     background-repeat:no-repeat;
@@ -26,10 +27,6 @@ body{
 {
 	border-radius: 10px;
 	background-color: $davys-grey;
-}
-
-body::-webkit-scrollbar{
-	width:0px;
 }
 
 img, svg {
@@ -60,4 +57,14 @@ img, svg {
 
 .m-30{
     margin-top:30px;
+}
+
+@font-face {
+    font-family: Niconne;
+    src: url("assets/Fonts/Niconne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MrsSaintDelafield;
+    src: url("assets/Fonts/MrsSaintDelafield-Regular.ttf") format("truetype");
 }
