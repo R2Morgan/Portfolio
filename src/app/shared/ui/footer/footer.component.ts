@@ -13,8 +13,6 @@ export class FooterComponent implements OnInit {
   }
   
   async ngOnInit(): Promise<void> {
-    console.log(this.latestVersion);
-    
     this.changelogService.getLatestVersion().then((data) => this.latestVersion = data);
   }
 }

@@ -31,4 +31,26 @@
     box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
     --bs-card-bg: #3284c2;
     .card-body{background-color: $green-blue-crayola;}
+    .carousel-img{
+        filter:blur(0px);
+    }
+}
+
+.carousel-img{
+    max-height:300px;
+    object-fit:cover;
+    border-radius: 7px 7px 0px 0px;
+    filter: blur(1px);
+}
+
+.carousel-caption{
+    padding-bottom: 0rem;
+}
+
+.card-name{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin: auto;
+    width: max-content;
+    padding: 2px 20px;
 }

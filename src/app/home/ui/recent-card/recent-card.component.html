@@ -7,22 +7,22 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item" [ngClass]="{'active': currentItem == 1}">
-            <img class="d-block w-100" src="../../../../assets/placeholder.png" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-                <p>First Item</p>
-              </div>
+            <img class="d-block w-100 carousel-img" [src]="getProjectImage(0)" alt="First slide"  (click)="viewProduct(getProjectId(0))">
+            <div class="carousel-caption d-none d-md-block" (click)="viewProduct(getProjectId(0))">
+                <p class="card-name">{{getProjectName(0)}}</p>
+            </div>
           </div>
           <div class="carousel-item" [ngClass]="{'active': currentItem == 2}">
-            <img class="d-block w-100" src="../../../../assets/placeholder.png" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-                <p>Second Item</p>
-              </div>
+            <img class="d-block w-100 carousel-img" [src]="getProjectImage(1)" alt="Second slide"  (click)="viewProduct(getProjectId(1))">
+            <div class="carousel-caption d-none d-md-block" (click)="viewProduct(getProjectId(1))">
+                <p class="card-name">{{getProjectName(1)}}</p>
+            </div>
           </div>
           <div class="carousel-item" [ngClass]="{'active': currentItem == 3}">
-            <img class="d-block w-100" src="../../../../assets/placeholder.png" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-                <p>Third Item</p>
-              </div>
+            <img class="d-block w-100 carousel-img" [src]="getProjectImage(2)" alt="Third slide"  (click)="viewProduct(getProjectId(2))">
+            <div class="carousel-caption d-none d-md-block" (click)="viewProduct(getProjectId(2))">
+                <p class="card-name">{{getProjectName(2)}}</p>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" (click)="previousItem()">

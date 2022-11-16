@@ -15,8 +15,7 @@ export class ChangelogService {
     var versList: Version[] = [];
     
     this.db.list('versionControl').snapshotChanges().subscribe(version => {
-      var v = version.map(v => ({key: v.payload.key, data: v.payload.val() as any}))
-      v.forEach(version => {
+      version.map(v => ({key: v.payload.key, data: v.payload.val() as any})).forEach(version => {
         var changeList : string[] = [];
         var number = 1;
         do{

@@ -19,6 +19,7 @@ import { SharedModule } from './shared/shared.module';
 import { DevlogPageModule } from './devlog/devlog-page.module';
 import { ContactPageModule } from './contact/contact-page.module';
 import { AboutPageModule } from './about/about-page.module';
+import { PortfolioPageModule } from './portfolio/portfolio-page.module';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyBqHfe0fzK-nkNr_aAoBuGJDkExVZquCh4",
@@ -41,6 +42,7 @@ export const firebaseConfig = {
     AppRoutingModule,
     HomePageModule,
     AboutPageModule,
+    PortfolioPageModule,
     SharedModule,
     ContactPageModule,
     DevlogPageModule,

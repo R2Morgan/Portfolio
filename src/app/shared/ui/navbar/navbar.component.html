@@ -7,13 +7,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-lg-0">
                 <li class="nav-item px-5">
-                    <a routerLink="/about" class="nav-link active navbar-link" aria-current="page">ABOUT</a>
+                    <a routerLink="/about" class="nav-link active navbar-link" [ngClass]="{'active-route': getActiveTab() == '/about'}" aria-current="page">ABOUT</a>
                 </li>
                 <li class="nav-item px-5">
-                    <a routerLink="/portfolio" class="nav-link active navbar-link" aria-current="page">PORTFOLIO</a>
+                    <a routerLink="/portfolio" class="nav-link active navbar-link" [ngClass]="{'active-route': getActiveTab() == '/portfolio'}" aria-current="page">PORTFOLIO</a>
                 </li>
                 <li class="nav-item px-4">
-                    <a routerLink="/contact" class="nav-link active navbar-link" aria-current="page">CONTACT</a>
+                    <a routerLink="/contact" class="nav-link active navbar-link" [ngClass]="{'active-route': getActiveTab() == '/contact'}" aria-current="page">CONTACT</a>
                 </li>
             </ul>
         </div>
