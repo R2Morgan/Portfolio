@@ -81,3 +81,19 @@
     float: right;
     color:white;
 }
+
+@media only screen and (max-width: 850px){
+    .title{
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+
+    .meta-value{
+        display: inline-block;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
+}

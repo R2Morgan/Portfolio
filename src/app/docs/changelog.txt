@@ -44,3 +44,14 @@ v.0.1.0 - 16.11.2022
 / v.1.0.0 will add all the initial data to the database (Release)
 / Need to replace the pictures of Bill Gates.
 / Content wise (Not Database Content) the Site is done.
+
+v.0.1.1 - 17.11.2022
+- Changelog Page is now mobile friendly
+- Fixed bug where changelog changes would be visible between header and page title
+
+v.0.2.0 - 17.11.2022
+- All Pages are now mobile friendly
++ Name in Navbar is now a link to the About Page
+/ The App is ready for release. All it needs now is data. Planned Release this weekend.
+/ Not landscape mode friendly
+/ big oof

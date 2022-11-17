@@ -50,5 +50,37 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px #191A1E inset !important;
+    box-shadow: 0 0 0 30px #191A1E inset !important;
     -webkit-text-fill-color: $dim-gray;
+}
+
+@media only screen and (max-width: 850px){
+    .form{
+        margin-left:5px;
+        padding-top:0px;
+    }
+
+    div{
+        margin-top:10px;
+    }
+
+    textarea{
+        margin-top:0px;
+        font-size:12px;
+        max-height: 65px;
+    }
+
+    input{
+        font-size:12px;
+    }
+
+    button{
+        font-size:15px;
+    }
+
+    .btn{
+        width:250px;
+        height:35px;
+        margin-top:0px;
+    }
 }

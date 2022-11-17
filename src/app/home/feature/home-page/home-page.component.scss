@@ -222,3 +222,161 @@
 	border-radius: 10px;
 	background-color: $davys-grey;
 }
+
+@media only screen and (max-width: 850px){
+    .picture{
+        width:250px;
+        margin-left:18%;
+        margin-top:80px;
+        margin-bottom:12px;
+    }
+
+    .medium-text{
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    .large-text{
+        font-size: 25px;
+        width:300px;
+        margin-left:20%;
+        text-align: right;
+    }
+
+    .wrapper .static-text{
+        font-size: 15px;
+    }
+
+    .dynamic-text ul{
+        margin-left:0px;
+    }
+
+    .wrapper{
+        display: inline-flex;
+        margin-left: 20%;
+    }
+
+    .about-me{
+        margin-left:0px;
+    }
+
+    .home-page-section{
+        margin-left:0px;
+    }
+
+    .dynamic-text li{
+        list-style: none;
+        font-size: 15px;
+        margin-left: -25px;
+        color: $green-blue-crayola;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    
+    @keyframes slide{
+        100%{
+            top:-240px;
+        }
+    }
+    
+    .dynamic-text li span{
+        position: relative;
+        font-size: 16px;
+    }
+    
+    .dynamic-text li span::after{
+        left:0;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-left: 2px solid white;
+        background-color: $raisin-black;
+        animation: typing 3s steps(9) infinite;
+        top:0px;
+    }
+    
+    @keyframes typing{
+        50%{
+            left: 100%;
+            margin: 0px -35px 0 35px;
+        }
+    }
+
+    .wrapper .dynamic-text{
+        margin-top:-19px;
+    }
+
+    .re{
+        margin:auto;
+    }
+
+    .se{
+        margin:auto;
+        text-align: center;
+        margin-left:15%;
+    }
+
+    .service-card{
+        width:250px;
+        height:200px;
+        margin-bottom: 25px;
+        margin-top:25px;
+        margin-left: 15%;
+    }
+
+    .service-card-container-top{
+        height:200px;
+        padding:5px;
+        margin-bottom: -50px;
+    }
+
+    .service-card-title{
+        font-size: 20px;
+        margin-top:20px;
+    }
+
+    .service-card-text{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .fa-solid{
+        margin-top: 30px;
+    }
+
+    .service-card-hr{
+        margin-top:10px;
+        margin-bottom:0px;
+    }
+
+    .about-me{
+        width:auto;
+    }
+
+    .contact-button{
+        margin-left:5%;
+    }
+
+    .service-card-tags{
+        letter-spacing: 1px;
+        font-size:12px;
+        font-weight: normal;
+    }
+
+    .service-card-container{
+        line-height: 30px;
+        margin-top:20px;
+    }
+
+    .scrollspy-example {
+        height:756px;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .mobile-only-br{
+        display: none;
+    }
+}

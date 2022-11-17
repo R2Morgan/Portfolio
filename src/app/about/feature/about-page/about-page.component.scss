@@ -48,3 +48,59 @@
 .colored{
     color: $green-blue-crayola;
 }
+
+
+@media only screen and (max-width: 850px){
+    .image{
+        width:200px;
+        border-radius: 10px;
+        margin-left:25%;
+        height:200px;
+        object-fit:cover;
+        margin-top:20px;
+    }
+
+    .content-container{
+        margin-left:0px;
+        margin-right:0px;
+        height:66vh;
+    }
+
+    .text{
+        width:auto;
+        padding:25px;
+    }
+
+    .image-container{
+        display: contents;
+        margin-top:0%;
+    }
+
+    .text-container{
+        display: contents;
+        margin-left:100px;
+        text-align: justify;
+    }
+
+    .title{
+        margin-top:10px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+    .quote-text{
+        font-size: 25px;
+        margin-left:150px;
+    }
+
+    .quote2{
+        margin-left:225px;
+        font-size: 25px;
+    }
+
+    .quote{
+        margin-top:-40px;
+    }
+}

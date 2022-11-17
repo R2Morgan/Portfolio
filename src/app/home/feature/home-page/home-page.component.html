@@ -20,10 +20,14 @@
     <section id="recents-section" class="home-page-section">
         <p style="visibility:hidden;">Recents-section</p>
         <div class="centered-container">
-            <recent-card [cardText]="'DEVELOPMENT'"></recent-card>
-            <recent-card [cardText]="'3D MODELING'"></recent-card>
-            <recent-card [cardText]="'WRITING'"></recent-card>
-            <p class="large-text m-30">RECENT WORK</p>
+            <div>    
+                <recent-card [cardText]="'DEVELOPMENT'"></recent-card>
+                <br class="mobile-only-br">
+                <recent-card [cardText]="'3D MODELING'"></recent-card>
+                <br class="mobile-only-br">
+                <recent-card [cardText]="'WRITING'"></recent-card>
+            </div>
+            <p class="large-text m-30 re">RECENT WORK</p>
             <a routerLink="/portfolio" class="btn btn-secondary btn-lg m-30">VIEW ALL</a>
         </div>
     </section>
@@ -52,8 +56,8 @@
                     <p class="service-card-tags">Blender</p>
                 </div>
             </div>
-            <p class="large-text m-30">SERVICES</p>
-            <a routerLink="/contact" class="btn btn-secondary btn-lg m-30">CONTACT ME</a>
+            <p class="large-text m-30 se">SERVICES</p>
+            <a routerLink="/contact" class="btn btn-secondary btn-lg m-30 contact-button">CONTACT ME</a>
         </div>
     </section>
     <section>

@@ -48,7 +48,7 @@ ul {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 850px){
     .title{
         font-size: 30px;
         margin-left:0px;
@@ -57,10 +57,17 @@ ul {
     ul{
         padding-left:10px;
         padding-right:10px;
+        display:contents;
     }
 
     .devlog-container{
         margin-left:0px;
-        padding: 0px 5px;
+        padding: 0px 30px;
+        margin-top:5px;
+    }
+    
+    .title{
+        margin-bottom:0px;
+        padding-top:20px;
     }
 }

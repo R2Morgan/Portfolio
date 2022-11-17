@@ -54,3 +54,40 @@
 .form-container{
     width:99%;
 }
+
+@media only screen and (max-width: 850px){
+    .contact-title{
+        font-size: 20px;
+    }
+
+    .contact-page-container{
+        display:contents;
+    }
+
+    .hr{
+        height:0px;
+        width:80%;
+        margin:auto;
+        margin-bottom:15px;
+    }
+
+    .email-container{
+        margin-top:30px;
+    }
+
+    .get-in-touch{
+        font-size:20px;
+        margin-left:-10px;
+        margin-bottom:50px;
+    }
+
+    .email-title{
+        font-size:15px;
+        margin-bottom:5px;
+    }
+
+    .email-text{
+        font-size:12px;
+        margin-bottom: 25px;
+    }
+}
