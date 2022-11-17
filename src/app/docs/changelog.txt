@@ -21,7 +21,6 @@ v.0.0.3 - 29.10.2022
 + Created Firebase App
 + FormSubmit Implemented
 - Changelog Page Finished
-- Removed Herobrine
 
 v.0.0.4 - 30.10.2022
 - Scrollbar Fixed
@@ -32,7 +31,7 @@ v.0.0.4 - 30.10.2022
 - Executed Order 66
 / Still not mobile friendly. Will do that after v.0.1.0 Release
 
-v.0.0.5 - 16.11.2022
+v.0.1.0 - 16.11.2022
 + Active Header Route now Highlighted in Navbar
 - Fixed the Recents Cards on the HomePage
 -> Their routing also works

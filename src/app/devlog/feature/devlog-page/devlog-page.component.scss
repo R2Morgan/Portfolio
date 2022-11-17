@@ -32,7 +32,7 @@
 }
 
 .title-div{
-    top:88px;
+    top:87px;
     background-image: url("/assets/Background.png");
     background-repeat:no-repeat;
     background-size: 100%;
@@ -46,4 +46,21 @@
 ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 480px){
+    .title{
+        font-size: 30px;
+        margin-left:0px;
+    }
+
+    ul{
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .devlog-container{
+        margin-left:0px;
+        padding: 0px 5px;
+    }
 }
