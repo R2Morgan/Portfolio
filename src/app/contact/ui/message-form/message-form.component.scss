@@ -58,6 +58,9 @@ input:-webkit-autofill:active{
     .form{
         margin-left:5px;
         padding-top:0px;
+        padding-bottom:30px;
+        padding-left:25px;
+        padding-right:25px;
     }
 
     div{
@@ -79,7 +82,7 @@ input:-webkit-autofill:active{
     }
 
     .btn{
-        width:250px;
+        width:auto;
         height:35px;
         margin-top:0px;
     }
