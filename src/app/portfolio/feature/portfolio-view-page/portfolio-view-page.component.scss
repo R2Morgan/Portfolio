@@ -96,4 +96,11 @@
         text-overflow: ellipsis;
         text-align: right;
     }
+
+    .picture-text{
+        width: 280px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+    }
 }
