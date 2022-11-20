@@ -38,6 +38,7 @@
 
 .carousel-img{
     max-height:300px;
+    height:250px;
     object-fit:cover;
     border-radius: 7px 7px 0px 0px;
     filter: blur(1px);
@@ -75,5 +76,12 @@
 
     .carousel-caption{
         padding-bottom:0px;
+    }
+
+    .card-name{
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
     }
 }

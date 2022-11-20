@@ -2,7 +2,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col" *ngFor="let project of projects">
             <div class="card" (click)="viewProject(project.id)">
-                <img [src]="project.picture" class="card-img-top" alt="...">
+                <img [src]="project.picture" class="card-img-top image" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{project.name}}</h5>
                   <p class="card-text">{{project.description}}</p>
