@@ -6,3 +6,33 @@
     margin-left:30px;
 }
 
+.navbar-nav .nav-link{
+    color: $dim-gray;
+    letter-spacing: 1px;;
+}
+
+.name{
+    color:white;
+    font-weight: 500;
+    margin-left:10px;
+    letter-spacing: 1px;
+    margin-top: -10px;
+    text-decoration: none;
+}
+
+.bg-dark{
+    background-image: url("/assets/Background.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-color: $raisin-black;
+}
+
+
+
+@media only screen and (max-width: 850px){
+    .name{
+        margin-top:-10px;
+        padding-right:20px;
+        text-decoration: none;
+    }
+}
